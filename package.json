@@ -1,0 +1,46 @@
+{
+  "name": "angular1-webpack-bootstrap-seed",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "server": "webpack-dev-server --history-api-fallback --inline --progress --watch --port 8088",
+    "start": "npm run server",
+    "build": "webpack --progress"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Mike Baldwin",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.5.0",
+    "angular-animate": "^1.5.8",
+    "angular-resource": "^1.5.9",
+    "angular-ui-router": "^0.3.1",
+    "immutable": "^3.8.1",
+    "jquery": "^3.1.1",
+    "ng-redux": "^3.3.3",
+    "redux-thunk": "^2.1.0",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "copy-webpack-plugin": "^3.0.1",
+    "css-loader": "^0.23.0",
+    "file-loader": "^0.9.0",
+    "html-loader": "^0.4.4",
+    "html-webpack-plugin": "^2.7.1",
+    "ng-annotate-loader": "^0.2.0",
+    "node-sass": "^3.10.1",
+    "path": "^0.12.7",
+    "raw-loader": "^0.5.1",
+    "rimraf": "^2.5.1",
+    "sass-loader": "^4.0.2",
+    "style-loader": "^0.13.0",
+    "webpack": "^1.12.13",
+    "webpack-dev-server": "^1.14.1",
+    "webpack-shell-plugin": "^0.4.3",
+    "webpack-uglify-js-plugin": "^1.1.9"
+  }
+}

@@ -1,0 +1,32 @@
+//body {
+//  background: #0147A7;
+//  color: #fff;
+//}
+
+a {
+  color: #03A9F4;
+  font-size: 16px;
+
+  &:hover {
+    color: blue;
+  }
+}
+
+main {
+  padding: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+  display: block;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.tab-nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}

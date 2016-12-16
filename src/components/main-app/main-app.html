@@ -1,0 +1,16 @@
+<nav class="tab-nav">
+  <ul class="button-group segmented">
+    <li ng-repeat="page in pages" ng-class="{ 'is-active': page.state === activeState }">
+      <a ui-sref="{{page.state}}" ng-click="activateState(page)">{{page.label}}</a>
+    </li>
+  </ul>
+</nav>
+
+<main>
+  <h1 class="title">Welcome to ng-redux demo!</h1>
+
+  <div ui-view></div>
+</main>
+<footer>
+  Footer
+</footer>

@@ -1,0 +1,23 @@
+<div>
+  <h2>Component 2a</h2>
+
+  <h4>Current sheep count: {{ sheepModel.state.count }}</h4>
+
+  <button ng-click="sheepModel.setCount(0)">Reset count to 0</button>
+  <button ng-click="sheepModel.incrementCount()">Increment count</button>
+  <button ng-click="sheepModel.decrementCount()">Decrement count</button>
+
+  <h4>Cars:</h4>
+  <div ng-repeat="car in carModel.state.allCars">
+    <span>Color={{ car.color }}</span>
+    <a ng-click="carModel.setColor(car.id, 'red')">[Set color = Red]</a>
+    <a ng-click="carModel.setColor(car.id, 'blue')">[Set color = Blue]</a>
+    <a ng-click="carModel.remove(car.id)">[Remove]</a>
+  </div>
+
+  <button ng-click="carModel.addNew('red')">Add new Red</button>
+  <button ng-click="carModel.addNew('blue')">Add new Blue</button>
+
+  <button ng-click="addNewRedCar()">Add new Red via Ctrl</button>
+  <button ng-click="syncAll()">Sync All via Ctrl</button>
+</div>
